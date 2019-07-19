@@ -1,0 +1,228 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+    <string name="hello_world">Hai Dunia!</string>
+    <string name="img_desc_poster">Poster</string>
+    <string name="percent">%</string>
+
+    <string name="language_settings">Language Settings</string>
+    <string name="tab_movie">Movies</string>
+    <string name="tab_tvshow">Tv Shows</string>
+
+    <string name="extra_movie_detail">MOVIE_DETAIL</string>
+    <string name="extra_tvshow_detail">TVSHOW_DETAIL</string>
+
+    <string name="release">Release</string>
+    <string name="genres">Genres</string>
+    <string name="overview">Overview</string>
+    <string name="story">Story</string>
+    <string name="featured_crew">F Crew</string>
+    <string name="user_score">Score</string>
+    <string name="director">Director</string>
+    <string name="screenplay">Screenplay</string>
+    <string name="writer">Writer</string>
+
+
+    <string name="text_plain">text/plain</string>
+    <string name="extra_subject">MADE 2019</string>
+    <string name="extra_body">Dicoding Academy Awesome (https://www.dicoding.com/)</string>
+    <string name="share_via">Kirim Via</string>
+
+    <!--Data dummy-->
+    <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum euismod urna consequat mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque molestie, ligula id aliquet molestie, erat augue dictum augue, nec condimentum dui mi a ante. Praesent porttitor mi quis tincidunt lobortis. Donec malesuada ligula eu molestie interdum. Duis nec rutrum diam. Ut nibh dolor, feugiat consequat sagittis ut, egestas nec odio. Cras ullamcorper, purus vitae hendrerit finibus, urna nisi pharetra leo, ut iaculis ante leo quis metus. Aenean mattis est quis interdum blandit. Suspendisse eget felis velit. \n</string>
+
+    <!--Data Movies-->
+    <string-array name="data_image_poster">
+        <item>@drawable/spiderman</item>
+        <item>@drawable/alita</item>
+        <item>@drawable/thelionking</item>
+        <item>@drawable/toystory</item>
+        <item>@drawable/crawl</item>
+        <item>@drawable/hellboy</item>
+        <item>@drawable/shazam</item>
+        <item>@drawable/johnwick</item>
+        <item>@drawable/detective_conan</item>
+        <item>@drawable/captenmarvel</item>
+    </string-array>
+    <string-array name="data_movie_title">
+        <item>Spider-Man: Far from Home</item>
+        <item>Alita: Battle Angel</item>
+        <item>The Lion King</item>
+        <item>Toy Story 4</item>
+        <item>Crawl</item>
+        <item>Hellboy</item>
+        <item>Shazam!</item>
+        <item>John Wick: Chapter 3 – Parabellum</item>
+        <item>Detective Conan: The Fist of Blue Sapphire</item>
+        <item>Captain Marvel</item>
+    </string-array>
+    <string-array name="data_movie_overview">
+        <item>Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.</item>
+        <item>When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.</item>
+        <item>Simba idolises his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub\'s arrival. Scar, Mufasa\'s brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba\'s exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.</item>
+        <item>Woody has always been confident about his place in the world and that his priority is taking care of his kid, whether that\'s Andy or Bonnie. But when Bonnie adds a reluctant new toy called Forky to her room, a road trip adventure alongside old and new friends will show Woody how big the world can be for a toy.</item>
+        <item>While struggling to save her father during a Category 5 hurricane, a young woman finds herself trapped inside a flooding house and fighting for her life against Florida\’s most savage and feared predators.</item>
+        <item>Hellboy comes to England, where he must defeat Nimue, Merlin\'s consort and the Blood Queen. But their battle will bring about the end of the world, a fate he desperately tries to turn away.</item>
+        <item>A boy is given the ability to become an adult superhero in times of need with a single magic word.</item>
+        <item>Super-assassin John Wick returns with a $14 million price tag on his head and an army of bounty-hunting killers on his trail. After killing a member of the shadowy international assassin\’s guild, the High Table, John Wick is excommunicado, but the world\’s most ruthless hit men and women await his every turn.</item>
+        <item>23rd movie in the "Detective Conan" franchise.</item>
+        <item>The story follows Carol Danvers as she becomes one of the universe\’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.</item>
+    </string-array>
+    <string-array name="data_movie_release">
+        <item>July 2, 2019</item>
+        <item>February 14, 2019</item>
+        <item>July 19, 2019</item>
+        <item>June 21, 2019</item>
+        <item>April 12, 2019</item>
+        <item>March 23, 2019</item>
+        <item>May 17, 2019</item>
+        <item>July 12, 2019</item>
+        <item>April 12, 2019</item>
+        <item>March 8, 2019</item>
+    </string-array>
+    <string-array name="data_movie_genres">
+        <item>Action, Adventure, Science Fiction</item>
+        <item>Action, Science Fiction, Thriller, Adventure</item>
+        <item>Adventure, Animation, Family, Drama, Action</item>
+        <item>Adventure, Animation, Comedy, Family</item>
+        <item>Thriller, Action, Horror</item>
+        <item>Action, Adventure, Fantasy, Horror, Science Fiction</item>
+        <item>Action, Comedy, Fantasy</item>
+        <item>Crime, Action, Thriller</item>
+        <item>Animation, Action, Drama, Mystery, Comedy</item>
+        <item>Action, Adventure, Science Fiction</item>
+    </string-array>
+    <string-array name="data_movie_rating">
+        <item>78</item>
+        <item>68</item>
+        <item>62</item>
+        <item>78</item>
+        <item>62</item>
+        <item>50</item>
+        <item>71</item>
+        <item>71</item>
+        <item>50</item>
+        <item>70</item>
+    </string-array>
+    <string-array name="data_movie_director">
+        <item>Jon Watts</item>
+        <item>Robert Rodriguez</item>
+        <item>Jon Favreau</item>
+        <item>Josh Cooley</item>
+        <item>Alexandre Aja</item>
+        <item>Mike Mignola</item>
+        <item>David F. Sandberg</item>
+        <item>Chad Stahelski</item>
+        <item>Tomoka Nagaoka</item>
+        <item>Anna Boden</item>
+    </string-array>
+    <string-array name="data_movie_screenplay">
+        <item>Erik Sommers</item>
+        <item>Laeta Kalogridis</item>
+        <item>Jeff Nathanson</item>
+        <item>Andrew Stanton</item>
+        <item>Shawn Rasmussen</item>
+        <item>Andrew Cosby</item>
+        <item>Henry Gayden</item>
+        <item>Chris Collins</item>
+        <item>Tomoka Nagaoka</item>
+        <item>Geneva Robertson-Dworet</item>
+    </string-array>
+    <string-array name="data_movie_writer">
+        <item>Chris McKenna</item>
+        <item>James Cameron</item>
+        <item>Brenda Chapman</item>
+        <item>John Lasseter</item>
+        <item>Michael Rasmussen</item>
+        <item>Mike Mignola</item>
+        <item>Darren Lemke</item>
+        <item>Derek Kolstad</item>
+        <item>Takahiro Ohkura</item>
+        <item>Meg LeFauve</item>
+    </string-array>
+
+    <!--Data TV Shows-->
+    <string-array name="data_image_poster_tvshow">
+        <item>@drawable/dragonball_tvshows</item>
+        <item>@drawable/fearthewalkingdead_tvshows</item>
+        <item>@drawable/greysanathomy_tvshows</item>
+        <item>@drawable/onepunchman_tvshows</item>
+        <item>@drawable/supergirl_tvshows</item>
+        <item>@drawable/seenoevil</item>
+        <item>@drawable/isekaicheatmagician</item>
+        <item>@drawable/strangerthings</item>
+        <item>@drawable/theflash</item>
+        <item>@drawable/arrow</item>
+    </string-array>
+    <string-array name="data_tvshow_title">
+        <item>Dragon Ball</item>
+        <item>Fear The Walking Dead</item>
+        <item>Grey\'s Anatomy</item>
+        <item>One-Punch Man</item>
+        <item>Super Girl</item>
+        <item>See No Evil: The Moors Murders</item>
+        <item>Isekai Cheat Magician</item>
+        <item>Stranger Things</item>
+        <item>The Flash</item>
+        <item>Arrow</item>
+    </string-array>
+    <string-array name="data_tvshow_overview">
+        <item>Long ago in the mountains, a fighting master known as Gohan discovered a strange boy whom he named Goku. Gohan raised him and trained Goku in martial arts until he died. The young and very strong boy was on his own, but easily managed. Then one day, Goku met a teenage girl named Bulma, whose search for the dragon balls brought her to Goku\'s home. Together, they set off to find all seven dragon balls in an adventure.</item>
+        <item>What did the world look like as it was transforming into the horrifying apocalypse depicted in \"The Walking Dead\"? This spin-off set in Los Angeles, following new characters as they face the beginning of the end of the world, will answer that question.</item>
+        <item>Follows the personal and professional lives of a group of doctors at Seattle\’s Grey Sloan Memorial Hospital.</item>
+        <item>Saitama is a hero who only became a hero for fun. After three years of \“special\” training, though, he\’s become so strong that he\’s practically invincible. In fact, he\’s too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore. With his passion for being a hero lost along with his hair, yet still faced with new enemies every day, how much longer can he keep it going?</item>
+        <item>Twenty-four-year-old Kara Zor-El, who was taken in by the Danvers family when she was 13 after being sent away from Krypton, must learn to embrace her powers after previously hiding them. The Danvers teach her to be careful with her powers, until she has to reveal them during an unexpected disaster, setting her on her journey of heroism.</item>
+        <item>The dramatisation of one of the most notorious killing sprees in British history.</item>
+        <item>As regular high school students Taichi and Rin disappeared in a beam of light. When they came to, the two of them were already in a world of swords and magic. Finally getting away after experiencing an attack by monsters, following the suggestion of adventurers they headed on the path towards the guild. In the guild, the two of them found out that they possessed unbelievably powerful magic.</item>
+        <item>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</item>
+        <item>After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion em dash and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won\'t be long before the world learns what Barry Allen has become..The Flash.</item>
+        <item>Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.</item>
+    </string-array>
+    <string-array name="data_tvshow_release">
+        <item>February 26, 1986</item>
+        <item>August 23, 2015</item>
+        <item>March 27, 2005</item>
+        <item>October 4, 2015</item>
+        <item>October 26, 2015</item>
+        <item>May 14, 2006</item>
+        <item>July 10, 2019</item>
+        <item>July 15, 2016</item>
+        <item> October 7, 2014</item>
+        <item>October 10, 2012</item>
+    </string-array>
+    <string-array name="data_tvshow_genres">
+        <item>Comedy, Sci-Fi dan Fantasy, Animation, Action dan Adventure</item>
+        <item>Drama, Horror</item>
+        <item>Drama</item>
+        <item>Action dan Adventure, Animation, Comedy</item>
+        <item>Action, Adventure, Drama, Science Fiction</item>
+        <item>Drama</item>
+        <item>Action dan Adventure, Sci-Fi dan Fantasy, Animation</item>
+        <item>Drama, Mystery, Sci-Fi dan Fantasy</item>
+        <item>Drama, Sci-Fi dan Fantasy</item>
+        <item>Crime, Drama, Mystery, Action and Adventure</item>
+    </string-array>
+    <integer-array name="data_tvshow_rating">
+        <item>71</item>
+        <item>63</item>
+        <item>63</item>
+        <item>80</item>
+        <item>51</item>
+        <item>55</item>
+        <item>87</item>
+        <item>83</item>
+        <item>67</item>
+        <item>58</item>
+    </integer-array>
+    <string-array name="data_tvshow_creator">
+        <item>Akira Toriyama</item>
+        <item>Dave Erickson</item>
+        <item>Shonda Rhimes</item>
+        <item>Yuusuke Murata</item>
+        <item>Greg Berlanti</item>
+        <item>No Creator</item>
+        <item>No Creator</item>
+        <item>Ross Duffer</item>
+        <item>Geoff Johns</item>
+        <item>Greg Berlanti</item>
+    </string-array>
+</resources>
