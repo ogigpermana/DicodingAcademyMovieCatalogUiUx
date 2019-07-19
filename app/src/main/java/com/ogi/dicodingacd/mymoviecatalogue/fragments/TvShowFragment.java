@@ -3,6 +3,7 @@ package com.ogi.dicodingacd.mymoviecatalogue.fragments;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,27 +20,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TvShowFragment extends Fragment {
-    private View layout;
 
     private String[] dataTvShowTitle, dataTvShowOverview, dataTvShowRelease, dataTvShowGenres, dataTvShowCreator;
     private int[] dataTvShowRating;
     private TypedArray dataTvShowPoster;
 
-    private RecyclerView recyclerView;
     private List<TvShow> tvShows;
-    private TvShowAdapter tvShowAdapter;
 
     // define empty constructor
     public TvShowFragment() {}
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        layout = inflater.inflate(R.layout.fragment_tv_show, container, false);
-        recyclerView = layout.findViewById(R.id.rv_tv_shows_id);
-        tvShowAdapter = new TvShowAdapter(getContext(), tvShows);
+        View layout = inflater.inflate(R.layout.fragment_tv_show, container, false);
+        RecyclerView recyclerView = layout.findViewById(R.id.rv_tv_shows_id);
+        TvShowAdapter tvShowAdapter = new TvShowAdapter(getContext(), tvShows);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(tvShowAdapter);
         return layout;

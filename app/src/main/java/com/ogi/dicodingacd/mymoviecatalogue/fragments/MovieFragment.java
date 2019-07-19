@@ -3,6 +3,7 @@ package com.ogi.dicodingacd.mymoviecatalogue.fragments;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,21 +25,18 @@ public class MovieFragment extends Fragment {
     private int[] dataMovieRating;
     private TypedArray dataImagePoster;
 
-    private View layout;
-    private RecyclerView recyclerView;
     private List<Movie> movieList;
-    private MovieAdapter mAdapter;
 
     // define empty constructor
     public MovieFragment() { }
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        layout = inflater.inflate(R.layout.fragment_movie, container, false);
-        recyclerView = layout.findViewById(R.id.rv_movies_id);
-        mAdapter = new MovieAdapter(getContext(), movieList);
+        View layout = inflater.inflate(R.layout.fragment_movie, container, false);
+        RecyclerView recyclerView = layout.findViewById(R.id.rv_movies_id);
+        MovieAdapter mAdapter = new MovieAdapter(getContext(), movieList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(mAdapter);
         return layout;

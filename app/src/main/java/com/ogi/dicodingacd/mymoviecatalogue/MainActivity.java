@@ -9,19 +9,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.ogi.dicodingacd.mymoviecatalogue.adapter.ViewPagerAdapter;
 import com.ogi.dicodingacd.mymoviecatalogue.fragments.MovieFragment;
 import com.ogi.dicodingacd.mymoviecatalogue.fragments.TvShowFragment;
-import com.ogi.dicodingacd.mymoviecatalogue.model.Movie;
-import com.ogi.dicodingacd.mymoviecatalogue.viewholder.MovieViewHolder;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-
-    private ViewPager viewPager;
-    private TabLayout tabLayout;
-    private ViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().setElevation(0);
         }
 
-        viewPager = findViewById(R.id.viewpager);
-        tabLayout = findViewById(R.id.tablayout);
-        adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        ViewPager viewPager = findViewById(R.id.viewpager);
+        TabLayout tabLayout = findViewById(R.id.tablayout);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         adapter.AddFragment(new MovieFragment(), getResources().getString(R.string.tab_movie));
         adapter.AddFragment(new TvShowFragment(), getResources().getString(R.string.tab_tvshow));
@@ -42,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_movie_white_24dp);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_live_tv_white_24dp);
+        Objects.requireNonNull(tabLayout.getTabAt(0)).setIcon(R.drawable.ic_movie_white_24dp);
+        Objects.requireNonNull(tabLayout.getTabAt(1)).setIcon(R.drawable.ic_live_tv_white_24dp);
     }
 
     @Override
